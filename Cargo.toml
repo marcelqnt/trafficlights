@@ -7,8 +7,9 @@ edition = "2024"
 crate-type = ["cdylib"]
 
 [features]
-# Gelbphasen (YellowA und YellowB) statt Rot plus YellowA.
 yellow = []
+red = []
+green = []
 
 [dependencies]
 lotussim-script = "*"

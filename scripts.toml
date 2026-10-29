@@ -1,10 +1,699 @@
+# RequestTriggerBox
+# [[script]]
+# user_id = 1000
+# sub_id = 549990612
+# toolchain = "cargo"
+
+# TrafficLight_1_bg_W0_Y
+# [[script]]
+# user_id = 1000
+# sub_id = 548234264
+# toolchain = "cargo"
+
+# TrafficLight_Car1
+# [[script]]
+# user_id = 740003
+# sub_id = 558261445
+# toolchain = "cargo"
+
+# TrafficLight_1_bg_std_g
+[[script]]
+user_id = 1000
+sub_id = 487495841
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_std_y
+[[script]]
+user_id = 1000
+sub_id = 882628559
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1H_gr_AllW_W
+# [[script]]
+# user_id = 1000
+# sub_id = 993902691
+# toolchain = "cargo"
+
+# TrafficLight_1_bg_Request_K
+# [[script]]
+# user_id = 1000
+# sub_id = 946765876
+# toolchain = "cargo"
+
+# TrafficLight_1_gr_AllW_W
+# [[script]]
+# user_id = 1000
+# sub_id = 70794561
+# toolchain = "cargo"
+
+# TrafficLight_1_bg_A1_F
+[[script]]
+user_id = 1000
+sub_id = 9791175
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_bg_right_y
+[[script]]
+user_id = 1000
+sub_id = 488206858
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_bg_Request
+# [[script]]
+# user_id = 1000
+# sub_id = 668859951
+# toolchain = "cargo"
+
+# TrafficLight_1_bg_left_g
+[[script]]
+user_id = 1000
+sub_id = 269548336
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_A1_Z
+[[script]]
+user_id = 1000
+sub_id = 874905568
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_gr_Request
+# [[script]]
+# user_id = 1000
+# sub_id = 79932332
+# toolchain = "cargo"
+
+# TrafficLight_2_bg_Request_K
+# [[script]]
+# user_id = 1000
+# sub_id = 375716358
+# toolchain = "cargo"
+
+# TrafficLight_1_bg_A2b_Y
+[[script]]
+user_id = 1000
+sub_id = 709036502
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_left_y
+[[script]]
+user_id = 1000
+sub_id = 380212011
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_bg_W1_Y
+# [[script]]
+# user_id = 1000
+# sub_id = 182487189
+# toolchain = "cargo"
+
+# TrafficLight_1_bg_W11_Y
+# [[script]]
+# user_id = 1000
+# sub_id = 467384226
+# toolchain = "cargo"
+
+# TrafficLight_1_bg_W13_Y
+# [[script]]
+# user_id = 1000
+# sub_id = 193299132
+# toolchain = "cargo"
+
+# TrafficLight_1_bg_ped_ost_y
+[[script]]
+user_id = 1000
+sub_id = 548623669
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_bg_W2_Y
+# [[script]]
+# user_id = 1000
+# sub_id = 990988291
+# toolchain = "cargo"
+
+# TrafficLight_1_gr_Ziff_W
+# [[script]]
+# user_id = 1000
+# sub_id = 4019829
+# toolchain = "cargo"
+
+# TrafficLight_1_bg_W3_Y
+# [[script]]
+# user_id = 1000
+# sub_id = 421919688
+# toolchain = "cargo"
+
+# TrafficLight_1_bg_W12_Y
+# [[script]]
+# user_id = 1000
+# sub_id = 446301798
+# toolchain = "cargo"
+
+# TrafficLight_1_bg_ped_west_g
+[[script]]
+user_id = 1000
+sub_id = 1789869
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_2_bg_std_y
+[[script]]
+user_id = 1000
+sub_id = 609868285
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_bg_F2
+[[script]]
+user_id = 1000
+sub_id = 975627068
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_ped-byc_euro_g
+[[script]]
+user_id = 1000
+sub_id = 213836288
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_F1
+[[script]]
+user_id = 1000
+sub_id = 253286366
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_gr_F1
+[[script]]
+user_id = 1000
+sub_id = 467304955
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_2_bg_A1_F
+[[script]]
+user_id = 1000
+sub_id = 204684106
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_gr_F0
+[[script]]
+user_id = 1000
+sub_id = 433097924
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_1H_gr_Ziff_W
+# [[script]]
+# user_id = 1000
+# sub_id = 754678331
+# toolchain = "cargo"
+
+# TrafficLight_2_bg_F0
+[[script]]
+user_id = 1000
+sub_id = 101863957
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_2_bg_F1
+[[script]]
+user_id = 1000
+sub_id = 72318849
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_2_bg_F3
+[[script]]
+user_id = 1000
+sub_id = 594536509
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_F3
+[[script]]
+user_id = 1000
+sub_id = 747801526
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_gr_F2
+[[script]]
+user_id = 1000
+sub_id = 665390798
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_gr_F3
+[[script]]
+user_id = 1000
+sub_id = 935925617
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_2_bg_F2
+[[script]]
+user_id = 1000
+sub_id = 238996325
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_F5
+[[script]]
+user_id = 1000
+sub_id = 802021945
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_F4
+[[script]]
+user_id = 1000
+sub_id = 227301659
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_2_bg_left_y
+[[script]]
+user_id = 1000
+sub_id = 338082266
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_2_bg_right_g
+[[script]]
+user_id = 1000
+sub_id = 151814507
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_2_bg_right_y
+[[script]]
+user_id = 1000
+sub_id = 565744574
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_gr_F5
+[[script]]
+user_id = 1000
+sub_id = 211290395
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_2_bg_F4
+[[script]]
+user_id = 1000
+sub_id = 269838657
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_gr_F4
+[[script]]
+user_id = 1000
+sub_id = 302491640
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_bg_F0
+[[script]]
+user_id = 1000
+sub_id = 53411287
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_2_bg_A1_Z
+[[script]]
+user_id = 1000
+sub_id = 625741222
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_2_bg_ped-byc_euro_r
+[[script]]
+user_id = 1000
+sub_id = 133105291
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_2_bg_left_g
+[[script]]
+user_id = 1000
+sub_id = 17844674
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_2_bg_ped-byc_euro_g
+[[script]]
+user_id = 1000
+sub_id = 790707689
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_2_bg_left_r
+[[script]]
+user_id = 1000
+sub_id = 674234836
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_2_bg_F5
+[[script]]
+user_id = 1000
+sub_id = 463256563
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_2_bg_right_r
+[[script]]
+user_id = 1000
+sub_id = 801194389
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_2_bg_straight_g
+[[script]]
+user_id = 1000
+sub_id = 291400717
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_gr_A1_Z
+[[script]]
+user_id = 1000
+sub_id = 629623516
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_gr_std_r
 [[script]]
 user_id = 1000
 sub_id = 917954576
 toolchain = "cargo"
+features = ["red"]
 
+# TrafficLight_1_bg_std_r
+[[script]]
+user_id = 1000
+sub_id = 531484348
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_1_gr_std_y
 [[script]]
 user_id = 1000
 sub_id = 575709236
 toolchain = "cargo"
 features = ["yellow"]
+
+# TrafficLight_1_gr_std_g
+[[script]]
+user_id = 1000
+sub_id = 461161088
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_car_std
+# [[script]]
+# user_id = 1000
+# sub_id = 396764134
+# toolchain = "cargo"
+
+# TrafficLight_1_bg_right_g
+[[script]]
+user_id = 1000
+sub_id = 424823273
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_ped_ost_r
+[[script]]
+user_id = 1000
+sub_id = 415048425
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_1_bg_right_r
+[[script]]
+user_id = 1000
+sub_id = 483145535
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_1_bg_ped_euro_r
+[[script]]
+user_id = 1000
+sub_id = 531974050
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_1_bg_byc_euro_y
+[[script]]
+user_id = 1000
+sub_id = 410005755
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_bg_ped_euro_y
+[[script]]
+user_id = 1000
+sub_id = 356267507
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_bg_ped_ost_g
+[[script]]
+user_id = 1000
+sub_id = 452331278
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_ped_euro_g
+[[script]]
+user_id = 1000
+sub_id = 540353102
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_ped_west_r
+[[script]]
+user_id = 1000
+sub_id = 691371940
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_1_bg_byc_euro_g
+[[script]]
+user_id = 1000
+sub_id = 635400196
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_byc_euro_r
+[[script]]
+user_id = 1000
+sub_id = 862701867
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_1_bg_ped-byc_euro_r
+[[script]]
+user_id = 1000
+sub_id = 43709639
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_1_bg_ped_west_y
+[[script]]
+user_id = 1000
+sub_id = 900188275
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_2_bg_ped_euro_r
+[[script]]
+user_id = 1000
+sub_id = 211990996
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_2_bg_std_r
+[[script]]
+user_id = 1000
+sub_id = 143815933
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_2_bg_ped_euro_g
+[[script]]
+user_id = 1000
+sub_id = 232883711
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_2_bg_ped_euro_y
+[[script]]
+user_id = 1000
+sub_id = 991355934
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_2_bg_byc_euro_r
+[[script]]
+user_id = 1000
+sub_id = 681465097
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_2_bg_std_g
+[[script]]
+user_id = 1000
+sub_id = 162409840
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_gr_ped_ost_g
+[[script]]
+user_id = 1000
+sub_id = 943113942
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_gr_ped_ost_r
+[[script]]
+user_id = 1000
+sub_id = 647856471
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_1_bg_left_r
+[[script]]
+user_id = 1000
+sub_id = 404868653
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_2_bg_byc_euro_g
+[[script]]
+user_id = 1000
+sub_id = 331014025
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_2_bg_byc_euro_y
+[[script]]
+user_id = 1000
+sub_id = 233878316
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_bg_straight_g
+[[script]]
+user_id = 1000
+sub_id = 11497706
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_A2b
+[[script]]
+user_id = 1000
+sub_id = 428513316
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_bg_straight_r
+[[script]]
+user_id = 1000
+sub_id = 234820074
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_1_bg_straight_y
+[[script]]
+user_id = 1000
+sub_id = 400968993
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_2_bg_A2b
+[[script]]
+user_id = 1000
+sub_id = 805498485
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_2_bg_straight_r
+[[script]]
+user_id = 1000
+sub_id = 17263220
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_2_bg_straight_y
+[[script]]
+user_id = 1000
+sub_id = 99414836
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_bg_A1
+[[script]]
+user_id = 1000
+sub_id = 569567510
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_gr_right_g
+[[script]]
+user_id = 1000
+sub_id = 244948996
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_gr_right_y
+[[script]]
+user_id = 1000
+sub_id = 644398168
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_gr_right_r
+[[script]]
+user_id = 1000
+sub_id = 765246131
+toolchain = "cargo"
+features = ["red"]
+
+# TrafficLight_1_gr_left_g
+[[script]]
+user_id = 1000
+sub_id = 320219192
+toolchain = "cargo"
+features = ["green"]
+
+# TrafficLight_1_gr_left_y
+[[script]]
+user_id = 1000
+sub_id = 960174941
+toolchain = "cargo"
+features = ["yellow"]
+
+# TrafficLight_1_gr_left_r
+[[script]]
+user_id = 1000
+sub_id = 552275460
+toolchain = "cargo"
+features = ["red"]
+
+# -----------------------------------------
+# Hamburg 78
+# -----------------------------------------
