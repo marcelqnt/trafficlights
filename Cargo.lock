@@ -36,9 +36,9 @@ dependencies = [
 
 [[package]]
 name = "lotussim-script"
-version = "0.8.7"
+version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a3dd751bace989588fe571b5f1d15051f6b8d05b4dbbaea5184deb15b91ce23f"
+checksum = "8f18a59c7323919fb6cd96bff2d3871d818bba58a9511750ef66b1d7071a3f7a"
 dependencies = [
  "lotussim-bindgen-macros",
  "lotussim-script-sys",
@@ -64,9 +64,9 @@ dependencies = [
 
 [[package]]
 name = "lotussim-shared"
-version = "0.6.3"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "854221d201908b9b02bf7f23719154d1c5cb7ee88ec8d7b2698fc0eac5e6c6be"
+checksum = "542ec5a7b6f295139e7d1a98f61824b8637f56654e24d672a4320b39d1f35769"
 dependencies = [
  "glam",
  "lotussim-script-sys",
