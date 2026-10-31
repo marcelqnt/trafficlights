@@ -2,7 +2,14 @@ use lotus_script::prelude::*;
 
 const EXP_APP_K_INCREASE: f32 = 40.0;
 const EXP_APP_K_DECREASE: f32 = 11.0;
+
+#[cfg(feature = "hh")]
+const FLASH_TIME: f32 = 0.9;
+#[cfg(feature = "hh")]
+const FLASH_ON_TIME: f32 = 0.4;
+#[cfg(not(feature = "hh"))]
 const FLASH_TIME: f32 = 1.4;
+#[cfg(not(feature = "hh"))]
 const FLASH_ON_TIME: f32 = 0.7;
 
 #[derive(Default)]
@@ -16,6 +23,10 @@ script!(MyScript);
 
 impl Script for MyScript {
     fn tick(&mut self) {
+        #[cfg(feature = "flashlight")]
+        let phase = TrafficLightPhase::OffSecondary;
+
+        #[cfg(not(feature = "flashlight"))]
         let phase = TrafficLightPhase::get_var("trafficlight_phase")
             .unwrap_or(TrafficLightPhase::OffPrimary);
 

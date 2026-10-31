@@ -697,3 +697,231 @@ features = ["red"]
 # -----------------------------------------
 # Hamburg 78
 # -----------------------------------------
+
+# Gl_Ampel_d300_gelb
+[[script]]
+user_id = 3473612
+sub_id = 119676644
+toolchain = "cargo"
+features = ["yellow"]
+
+# Gl_Ampel_d300_gruen
+[[script]]
+user_id = 3473612
+sub_id = 297696194
+toolchain = "cargo"
+features = ["green"]
+
+# Gl_Ampel_d300_rot
+[[script]]
+user_id = 3473612
+sub_id = 522221596
+toolchain = "cargo"
+features = ["red"]
+
+# Gl_Ampel_gelb
+[[script]]
+user_id = 3473612
+sub_id = 84377461
+toolchain = "cargo"
+features = ["yellow"]
+
+# Gl_Ampel_gelb_geradeaus
+[[script]]
+user_id = 3473612
+sub_id = 842657061
+toolchain = "cargo"
+features = ["yellow"]
+
+# Gl_Ampel_gelb_halblinks
+[[script]]
+user_id = 3473612
+sub_id = 182997092
+toolchain = "cargo"
+features = ["yellow"]
+
+# Gl_Ampel_gelb_halbrechts
+[[script]]
+user_id = 3473612
+sub_id = 754789247
+toolchain = "cargo"
+features = ["yellow"]
+
+# Gl_Ampel_gelb_links
+[[script]]
+user_id = 3473612
+sub_id = 542851268
+toolchain = "cargo"
+features = ["yellow"]
+
+# Gl_Ampel_gelb_rechts
+[[script]]
+user_id = 3473612
+sub_id = 684347035
+toolchain = "cargo"
+features = ["yellow"]
+
+# Gl_Ampel_gruen
+[[script]]
+user_id = 3473612
+sub_id = 290500391
+toolchain = "cargo"
+features = ["green"]
+
+# Gl_Ampel_gruen_Fg
+[[script]]
+user_id = 3473612
+sub_id = 154270237
+toolchain = "cargo"
+features = ["green"]
+
+# Gl_Ampel_gruen_geradeaus
+[[script]]
+user_id = 3473612
+sub_id = 21925988
+toolchain = "cargo"
+features = ["green"]
+
+# Gl_Ampel_gruen_halblinks
+[[script]]
+user_id = 3473612
+sub_id = 336041763
+toolchain = "cargo"
+features = ["green"]
+
+# Gl_Ampel_gruen_halbrechts
+[[script]]
+user_id = 3473612
+sub_id = 748625889
+toolchain = "cargo"
+features = ["green"]
+
+# Gl_Ampel_gruen_links
+[[script]]
+user_id = 3473612
+sub_id = 146340265
+toolchain = "cargo"
+features = ["green"]
+
+# Gl_Ampel_gruen_rechts
+[[script]]
+user_id = 3473612
+sub_id = 641712705
+toolchain = "cargo"
+features = ["green"]
+
+# Gl_Ampel_rot
+[[script]]
+user_id = 3473612
+sub_id = 187844842
+toolchain = "cargo"
+features = ["red"]
+
+# Gl_Ampel_rot_Fg
+[[script]]
+user_id = 3473612
+sub_id = 910505265
+toolchain = "cargo"
+features = ["red"]
+
+# Gl_Ampel_rot_geradeaus
+[[script]]
+user_id = 3473612
+sub_id = 630730773
+toolchain = "cargo"
+features = ["red"]
+
+# Gl_Ampel_rot_halblinks
+[[script]]
+user_id = 3473612
+sub_id = 748648912
+toolchain = "cargo"
+features = ["red"]
+
+# Gl_Ampel_rot_halbrechts
+[[script]]
+user_id = 3473612
+sub_id = 665375529
+toolchain = "cargo"
+features = ["red"]
+
+# Gl_Ampel_rot_links
+[[script]]
+user_id = 3473612
+sub_id = 107780566
+toolchain = "cargo"
+features = ["red"]
+
+# Gl_Ampel_rot_rechts
+[[script]]
+user_id = 3473612
+sub_id = 796377356
+toolchain = "cargo"
+features = ["red"]
+
+# Gl_Ampel_AchtungStrab
+[[script]]
+user_id = 3473612
+sub_id = 754835076
+toolchain = "cargo"
+features = ["flashlight", "yellow", "hh"]
+
+# Gl_Signal_F0bisF3
+# [[script]]
+# user_id = 3473612
+# sub_id = 803210022
+# toolchain = "cargo"
+
+# Gl_Signal_F0bisF3_Aufsatz
+# [[script]]
+# user_id = 3473612
+# sub_id = 510684967
+# toolchain = "cargo"
+
+# Gl_Signal_F0bisF3_Oberl_L
+# [[script]]
+# user_id = 3473612
+# sub_id = 675495345
+# toolchain = "cargo"
+
+# Gl_Signal_F0bisF3_Oberl_R
+# [[script]]
+# user_id = 3473612
+# sub_id = 484101517
+# toolchain = "cargo"
+
+# Gl_Signal_F0_F1
+# [[script]]
+# user_id = 3473612
+# sub_id = 959021554
+# toolchain = "cargo"
+
+# Gl_Signal_F0_F1_Aufsatz
+# [[script]]
+# user_id = 3473612
+# sub_id = 390622120
+# toolchain = "cargo"
+
+# Gl_Signal_F0_F2
+# [[script]]
+# user_id = 3473612
+# sub_id = 385499756
+# toolchain = "cargo"
+
+# Gl_Signal_F0_F2_Aufsatz
+# [[script]]
+# user_id = 3473612
+# sub_id = 104593263
+# toolchain = "cargo"
+
+# Gl_Signal_F0_F3
+# [[script]]
+# user_id = 3473612
+# sub_id = 668574906
+# toolchain = "cargo"
+
+# Gl_Signal_F0_F3_Aufsatz
+# [[script]]
+# user_id = 3473612
+# sub_id = 586982606
+# toolchain = "cargo"
