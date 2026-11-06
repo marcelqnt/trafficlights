@@ -129,8 +129,8 @@ impl MyScript {
             self.light = next;
             set_var("light", self.light);
         }
-        if settled {
-            time::idle_until_var_changes(VAR_TRAFFICLIGHT_PHASE);
-        }
+        // if settled {
+        //     time::idle_until_var_changes(VAR_TRAFFICLIGHT_PHASE);
+        // }
     }
 }
