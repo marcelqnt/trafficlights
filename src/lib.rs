@@ -1,15 +1,18 @@
 use lotus_script::prelude::*;
+use lotus_script::traffic::VAR_TRAFFICLIGHT_PHASE;
 
 const EXP_APP_K_INCREASE: f32 = 40.0;
 const EXP_APP_K_DECREASE: f32 = 11.0;
+/// Unter dieser Abweichung gilt die Lampe als aus- oder eingeschnappt.
+const SETTLE_EPSILON: f32 = 0.004;
 
-#[cfg(feature = "hh")]
+#[cfg(all(feature = "yellow", feature = "hh"))]
 const FLASH_TIME: f32 = 0.9;
-#[cfg(feature = "hh")]
+#[cfg(all(feature = "yellow", feature = "hh"))]
 const FLASH_ON_TIME: f32 = 0.4;
-#[cfg(not(feature = "hh"))]
+#[cfg(all(feature = "yellow", not(feature = "hh")))]
 const FLASH_TIME: f32 = 1.4;
-#[cfg(not(feature = "hh"))]
+#[cfg(all(feature = "yellow", not(feature = "hh")))]
 const FLASH_ON_TIME: f32 = 0.7;
 
 #[derive(Default)]
@@ -23,31 +26,37 @@ script!(MyScript);
 
 impl Script for MyScript {
     fn tick(&mut self) {
-        #[cfg(feature = "flashlight")]
-        let phase = TrafficLightPhase::OffSecondary;
-
-        #[cfg(not(feature = "flashlight"))]
-        let phase = TrafficLightPhase::get_var("trafficlight_phase")
-            .unwrap_or(TrafficLightPhase::OffPrimary);
-
-        let myphase = phase_active(phase);
-
-        #[cfg(feature = "yellow")]
-        let flash_on = if phase == TrafficLightPhase::OffSecondary {
-            self.flashtime += time::delta();
-            if self.flashtime > FLASH_TIME {
-                self.flashtime = 0.0;
-            }
-            self.flashtime < FLASH_ON_TIME
+        let phase = current_phase();
+        let lamp_on = if is_blinking(phase) {
+            self.flash_on()
         } else {
-            self.flashtime = 0.0;
-            false
+            self.reset_flash();
+            phase_active(phase)
         };
+        self.approach(if lamp_on { 1.0 } else { 0.0 }, !is_blinking(phase));
+    }
+}
 
-        #[cfg(not(feature = "yellow"))]
-        let flash_on = false;
+fn current_phase() -> TrafficLightPhase {
+    #[cfg(feature = "flashlight")]
+    {
+        TrafficLightPhase::OffSecondary
+    }
+    #[cfg(not(feature = "flashlight"))]
+    {
+        TrafficLightPhase::get_var(VAR_TRAFFICLIGHT_PHASE).unwrap_or(TrafficLightPhase::OffPrimary)
+    }
+}
 
-        self.exp_app_bool(myphase || flash_on);
+fn is_blinking(phase: TrafficLightPhase) -> bool {
+    #[cfg(feature = "yellow")]
+    {
+        phase == TrafficLightPhase::OffSecondary
+    }
+    #[cfg(not(feature = "yellow"))]
+    {
+        let _ = phase;
+        false
     }
 }
 
@@ -84,16 +93,44 @@ fn phase_active(phase: TrafficLightPhase) -> bool {
 }
 
 impl MyScript {
-    fn exp_app(&mut self, target: f32) {
-        self.light = if target < self.light {
+    fn reset_flash(&mut self) {
+        #[cfg(feature = "yellow")]
+        {
+            self.flashtime = 0.0;
+        }
+    }
+
+    fn flash_on(&mut self) -> bool {
+        #[cfg(feature = "yellow")]
+        {
+            self.flashtime += time::delta();
+            if self.flashtime > FLASH_TIME {
+                self.flashtime = 0.0;
+            }
+            self.flashtime < FLASH_ON_TIME
+        }
+        #[cfg(not(feature = "yellow"))]
+        {
+            false
+        }
+    }
+
+    fn approach(&mut self, target: f32, may_sleep: bool) {
+        let mut next = if target < self.light {
             target + (self.light - target) * (-EXP_APP_K_DECREASE * time::delta()).exp()
         } else {
             target + (self.light - target) * (-EXP_APP_K_INCREASE * time::delta()).exp()
         };
-        set_var("light", self.light);
-    }
-
-    fn exp_app_bool(&mut self, target: bool) {
-        self.exp_app(if target { 1.0 } else { 0.0 });
+        if may_sleep && (next - target).abs() < SETTLE_EPSILON {
+            next = target;
+        }
+        let settled = may_sleep && next == target;
+        if next != self.light || settled {
+            self.light = next;
+            set_var("light", self.light);
+        }
+        if settled {
+            time::idle_until_var_changes(VAR_TRAFFICLIGHT_PHASE);
+        }
     }
 }
