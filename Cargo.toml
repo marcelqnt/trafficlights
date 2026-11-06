@@ -14,4 +14,5 @@ hh = []
 flashlight = []
 
 [dependencies]
-lotussim-script = { path = "../../script-rs/lotus-script" }
+# lotussim-script = { path = "../../script-rs/lotus-script" }
+lotussim-script = "*"

@@ -26,6 +26,8 @@ checksum = "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682"
 [[package]]
 name = "lotussim-bindgen-macros"
 version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bbbc0a0642a89e2cba6eb131459e1f9636259cbd7b9c0244aa0b91a15bf62c44"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -35,6 +37,8 @@ dependencies = [
 [[package]]
 name = "lotussim-script"
 version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8f18a59c7323919fb6cd96bff2d3871d818bba58a9511750ef66b1d7071a3f7a"
 dependencies = [
  "lotussim-bindgen-macros",
  "lotussim-script-sys",
@@ -49,6 +53,8 @@ dependencies = [
 [[package]]
 name = "lotussim-script-sys"
 version = "0.5.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9b56c8d52bf8adc39e161482408864df47edec6923a4a7e28d75590d5b87f417"
 dependencies = [
  "lotussim-bindgen-macros",
  "rmp-serde",
@@ -59,6 +65,8 @@ dependencies = [
 [[package]]
 name = "lotussim-shared"
 version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "542ec5a7b6f295139e7d1a98f61824b8637f56654e24d672a4320b39d1f35769"
 dependencies = [
  "glam",
  "lotussim-script-sys",
