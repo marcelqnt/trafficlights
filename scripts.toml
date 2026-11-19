@@ -859,6 +859,34 @@ sub_id = 796377356
 toolchain = "cargo"
 features = ["red"]
 
+# Gl_Ampel_SndSigFahrt
+[[script]]
+user_id = 3473612
+sub_id = 557475146
+toolchain = "cargo"
+features = ["green"]
+
+# Gl_Ampel_SndSigFahrt_links
+[[script]]
+user_id = 3473612
+sub_id = 114010658
+toolchain = "cargo"
+features = ["green"]
+
+# Gl_Ampel_SndSigFahrt_rechts
+[[script]]
+user_id = 3473612
+sub_id = 550416060
+toolchain = "cargo"
+features = ["green"]
+
+# Gl_Ampel_SndSigHalt
+[[script]]
+user_id = 3473612
+sub_id = 652889384
+toolchain = "cargo"
+features = ["red"]
+
 # Gl_Ampel_AchtungStrab
 [[script]]
 user_id = 3473612

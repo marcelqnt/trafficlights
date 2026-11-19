@@ -4,7 +4,7 @@ use lotus_script::traffic::VAR_TRAFFICLIGHT_PHASE;
 const EXP_APP_K_INCREASE: f32 = 40.0;
 const EXP_APP_K_DECREASE: f32 = 11.0;
 /// Unter dieser Abweichung gilt die Lampe als aus- oder eingeschnappt.
-const SETTLE_EPSILON: f32 = 0.004;
+const SETTLE_EPSILON: f32 = 0.05;
 
 #[cfg(all(feature = "yellow", feature = "hh"))]
 const FLASH_TIME: f32 = 0.9;
@@ -129,8 +129,8 @@ impl MyScript {
             self.light = next;
             set_var("light", self.light);
         }
-        if settled {
-            time::idle_until_var_changes(VAR_TRAFFICLIGHT_PHASE);
-        }
+        // if settled {
+        //     time::idle_until_var_changes(VAR_TRAFFICLIGHT_PHASE);
+        // }
     }
 }
