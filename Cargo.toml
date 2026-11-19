@@ -1,18 +1,6 @@
-[package]
-name = "trafficlights"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+resolver = "3"
+members = ["standard", "gl-signal-f0-f3"]
 
-[lib]
-crate-type = ["cdylib"]
-
-[features]
-yellow = []
-red = []
-green = []
-hh = []
-flashlight = []
-
-[dependencies]
+[workspace.dependencies]
 lotussim-script = { path = "../../script-rs/lotus-script" }
-# lotussim-script = "*"
