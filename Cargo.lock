@@ -16,6 +16,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "gl-signal-f0-f3-8linsen"
+version = "0.1.0"
+dependencies = [
+ "lotussim-script",
+]
+
+[[package]]
 name = "glam"
 version = "0.30.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"

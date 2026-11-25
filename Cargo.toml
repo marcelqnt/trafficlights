@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["standard", "gl-signal-f0-f3"]
+members = ["standard", "gl-signal-f0-f3", "gl-signal-f0-f3-8linsen"]
 
 [workspace.dependencies]
 lotussim-script = { path = "../../script-rs/lotus-script" }

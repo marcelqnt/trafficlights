@@ -1043,47 +1043,11 @@ directory = "gl-signal-f0-f3"
 user_id = 3473612
 sub_id = 675495345
 toolchain = "cargo"
-directory = "gl-signal-f0-f3"
+directory = "gl-signal-f0-f3-8linsen"
 
 # Gl_Signal_F0bisF3_Oberl_R
 [[script]]
 user_id = 3473612
 sub_id = 484101517
 toolchain = "cargo"
-directory = "gl-signal-f0-f3"
-
-# Gl_Signal_F0_F1
-# [[script]]
-# user_id = 3473612
-# sub_id = 959021554
-# toolchain = "cargo"
-
-# Gl_Signal_F0_F1_Aufsatz
-# [[script]]
-# user_id = 3473612
-# sub_id = 390622120
-# toolchain = "cargo"
-
-# Gl_Signal_F0_F2
-# [[script]]
-# user_id = 3473612
-# sub_id = 385499756
-# toolchain = "cargo"
-
-# Gl_Signal_F0_F2_Aufsatz
-# [[script]]
-# user_id = 3473612
-# sub_id = 104593263
-# toolchain = "cargo"
-
-# Gl_Signal_F0_F3
-# [[script]]
-# user_id = 3473612
-# sub_id = 668574906
-# toolchain = "cargo"
-
-# Gl_Signal_F0_F3_Aufsatz
-# [[script]]
-# user_id = 3473612
-# sub_id = 586982606
-# toolchain = "cargo"
+directory = "gl-signal-f0-f3-8linsen"

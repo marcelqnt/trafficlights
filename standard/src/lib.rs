@@ -1,5 +1,4 @@
-use lotus_script::prelude::*;
-use lotus_script::traffic::VAR_TRAFFICLIGHT_PHASE;
+use lotus_script::{Script, script, time, traffic::TrafficLightPhase, var::set_var};
 
 const EXP_APP_K_INCREASE: f32 = 40.0;
 const EXP_APP_K_DECREASE: f32 = 11.0;
@@ -44,7 +43,10 @@ fn current_phase() -> TrafficLightPhase {
     }
     #[cfg(not(feature = "flashlight"))]
     {
-        TrafficLightPhase::get_var(VAR_TRAFFICLIGHT_PHASE).unwrap_or(TrafficLightPhase::OffPrimary)
+        use lotus_script::var::VariableType;
+
+        TrafficLightPhase::get_var(lotus_script::traffic::VAR_TRAFFICLIGHT_PHASE)
+            .unwrap_or(TrafficLightPhase::OffPrimary)
     }
 }
 
@@ -129,8 +131,8 @@ impl MyScript {
             self.light = next;
             set_var("light", self.light);
         }
-        // if settled {
-        //     time::idle_until_var_changes(VAR_TRAFFICLIGHT_PHASE);
-        // }
+        if settled {
+            time::idle_until_var_changes(lotus_script::traffic::VAR_TRAFFICLIGHT_PHASE);
+        }
     }
 }
